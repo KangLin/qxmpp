@@ -5,7 +5,7 @@
 #  Opus_LIBRARIES - The libraries needed to use Opus
 
 find_package(PkgConfig)
-pkg_check_modules(PC_Opus QUIET libopus)
+pkg_check_modules(PC_Opus QUIET opus)
 
 find_path(Opus_INCLUDE_DIR opus/opus.h
     HINTS ${PC_Opus_INCLUDEDIR} ${PC_Opus_INCLUDE_DIRS}

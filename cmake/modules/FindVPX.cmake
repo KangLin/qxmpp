@@ -5,7 +5,7 @@
 #  VPX_LIBRARIES - The libraries needed to use VPX
 
 find_package(PkgConfig)
-pkg_check_modules(PC_VPX QUIET libvpx)
+pkg_check_modules(PC_VPX QUIET vpx)
 
 find_path(VPX_INCLUDE_DIR vpx/vp8.h
     HINTS ${PC_VPX_INCLUDEDIR} ${PC_VPX_INCLUDE_DIRS}
